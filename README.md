@@ -10,4 +10,4 @@ prismjs
 
 # Live Portfolio
 
-pilot-coding.vercel.com
+pilot-coding.vercel.app
