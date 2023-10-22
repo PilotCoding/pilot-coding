@@ -1,0 +1,21 @@
+.ruler {
+    font-size: 12px;
+    color: rgb(var(--color-7));
+    border: 1px solid rgb(var(--color-3));
+    min-height: 25px;
+    background: rgb(var(--color-6));
+    overflow: hidden;
+}
+
+.ruler>li {
+    flex-direction: column;
+    justify-content: space-evenly;
+    min-width: 100px;
+    height: 100%;
+}
+
+.ruler>li>div {
+    width: 1px;
+    height: 8px;
+    background: rgb(var(--color-3));
+}

@@ -1,0 +1,26 @@
+.select_component {
+    top: 0;
+    bottom: 0;
+    z-index: 2;
+    position: absolute;
+    border-right: 1px solid rgb(var(--color-3));
+    padding: 20px;
+    width: 298px;
+    background: rgba(var(--color-5), .9);
+    backdrop-filter: blur(10px);
+}
+
+.select_component > li {
+    margin: 10px 0;
+    border: 1px solid rgb(var(--color-3));
+    padding: 10px;
+    background: rgb(var(--color-5));
+}
+
+.select_component > li:hover {
+    background: rgba(var(--color-2), .5);
+}
+
+.selected_item {
+    background: rgba(var(--color-8), .5) !important;
+}

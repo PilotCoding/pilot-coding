@@ -1,0 +1,61 @@
+.copy {
+    z-index: 4;
+    color: rgb(255, 255, 255);
+    bottom: 33px;
+    padding: clamp(10px, 3.125vw, 20px);
+    text-shadow: 0 0 10px rgba(0, 0, 0, .75);
+}
+
+.copy>h1 {
+    font-size: clamp(20px, 6.25vw, 34px);
+}
+
+.copy>h2 {
+    font-size: clamp(12px, 3.75vw, 18px);
+}
+
+.prev {
+    left: 20px;
+    transform: rotateZ(90deg);
+}
+
+.next {
+    right: 20px;
+    transform: rotateZ(-90deg);
+}
+
+.prev,
+.next {
+    z-index: 3;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 1px solid rgb(var(--color-5));
+    padding: 8px;
+    width: 30px;
+    height: 30px;
+    background: rgba(var(--color-4), .8);
+}
+
+.prev,
+.next,
+.copy,
+.carousel_image {
+    position: absolute;
+}
+
+.carousel_image {
+    border-radius: 20px;
+    border: 10px solid white;
+    width: clamp(150px, 46.875vw, 300px);
+    aspect-ratio: 1/1.45;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0.15);
+}
+
+.reflection {
+    opacity: .17;
+    transform: rotateY(180deg);
+    -webkit-mask-image: url('./assets/reflection-mask.webp');
+    mask-image: url('./assets/reflection-mask.webp');
+    -webkit-mask-size: contain;
+    mask-size: contain;
+}

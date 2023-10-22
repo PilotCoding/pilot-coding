@@ -1,0 +1,98 @@
+@import url('/node_modules/prismjs/themes/prism-tomorrow.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+:root {
+    color-scheme: dark;
+    --background-color: 50, 50, 50;
+    --color-1: 220, 219, 199;
+    --color-2: 179, 177, 129;
+    --color-3: 64, 64, 64;
+    --color-4: 37, 37, 35;
+    --color-5: 38, 40, 41;
+    --color-6: 44, 44, 44;
+    --color-7: 95, 95, 95;
+    --color-8: 12, 158, 198;
+}
+
+::-webkit-scrollbar {
+    width: 3px;
+    height: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 3px;
+    background: gray;
+}
+
+::-webkit-scrollbar-corner {
+    background: transparent;
+}
+
+::selection {
+    background: transparent;
+}
+
+* {
+    margin: 0;
+    outline: none;
+    border: none;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    caret-color: transparent;
+    font-family: Montserrat, sans-serif;
+    font-size: 12px;
+    line-height: 1.1;
+    background: rgb(var(--background-color));
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 0 auto;
+    min-width: 320px;
+    min-height: 480px;
+    height: 100vh;
+    background: url('./assets/backing.svg'), linear-gradient(rgb(var(--color-1)), rgb(var(--color-2)));
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: contain;
+    overflow: hidden;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    color: unset;
+    text-decoration: none;
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.flex-ai-center {
+    display: flex;
+    align-items: center;
+}
+
+.flex-ai-jc-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

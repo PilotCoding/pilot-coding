@@ -1,0 +1,72 @@
+.container {
+    width: 100%;
+    height: inherit;
+}
+
+.tabbar {
+    position: relative;
+    column-gap: 20px;
+    justify-content: space-evenly;
+    border-radius: clamp(10px, 3.125vw, 20px);
+    padding: 20px;
+    background: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, .25);
+}
+
+.tabbar>li {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+}
+
+.tabbar img {
+    border-radius: 50%;
+    border: 3px solid darkgray;
+    width: 40px;
+    height: 40px;
+}
+
+.userIcon,
+.imageIcon,
+.plusIcon,
+.bellIcon,
+.cartIcon {
+    z-index: 1;
+    position: relative;
+    fill: gray;
+    width: 30px;
+    height: 30px;
+}
+
+.imageIcon:hover {
+    fill: rgb(138, 183, 220);
+}
+
+.plusIcon:hover {
+    fill: rgb(147, 209, 148);
+}
+
+.bellIcon:hover {
+    fill: rgb(193, 136, 202);
+}
+
+.cartIcon:hover {
+    fill: rgb(209, 158, 127);
+}
+
+.userIcon:hover,
+.imageIcon:hover,
+.plusIcon:hover,
+.bellIcon:hover,
+.cartIcon:hover {
+    transform: scale(1.1);
+}
+
+.bubble {
+    z-index: 0;
+    position: absolute;
+    border-radius: 50%;
+    width: 46px;
+    height: 46px;
+    top: 17px;
+}

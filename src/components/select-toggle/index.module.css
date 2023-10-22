@@ -1,0 +1,8 @@
+.drawer_toggle {
+    cursor: pointer;
+    column-gap: 10px;
+    border-radius: 20px;
+    border: 1px solid rgb(var(--color-3));
+    padding: 0 20px;
+    height: 28px;
+}

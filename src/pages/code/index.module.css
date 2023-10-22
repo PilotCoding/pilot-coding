@@ -1,0 +1,13 @@
+.example {
+    height: 100%;
+    overflow: auto;
+}
+
+.live {
+    z-index: 0;
+    top: 0;
+    position: sticky;
+    height: inherit;
+    perspective: 2000px;
+    overflow: hidden;
+}
